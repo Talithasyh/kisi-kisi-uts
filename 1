@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int total_harga, diskon, pembayaran;
+    cout <<"Masukkan total harga (Jika total harga lebih dari 100000 mendapatkan diskon 45%): ";
+    cin >> total_harga;
+    if(total_harga>100000){
+        diskon=(total_harga*45)/100;
+        pembayaran=total_harga-diskon;
+        cout << "Diskon harga: " << diskon <<endl;
+        cout << "pembayaran: " << pembayaran <<endl;
+        return 0;
+    }
+    cout <<"Tidak mendapat diskon"<<endl;
+    cout <<"pembayaran: "<< pembayaran <<endl;
+}
