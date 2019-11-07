@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+   
+    int p,q,r,z;
+   cout << "Masukkan bilangan pertama : ";
+   cin >> p;
+   cout << "Masukkan bilangan kedua : ";
+   cin >> q;
+   cout << "Masukkan bilangan ketiga : ";
+   cin >> r;
+   
+   if (q<p) {
+      z=q;
+      q=p;
+      p=z;
+   }
+   
+   if (r<p) {
+      z=r;
+      r=p;
+      p=z;
+   }
+   
+   if (r<q) {
+      z=q;
+      q=r;
+      r=z;
+   }
+   
+   cout << "Bilangan dari yang terkecil sampai yang terbesar : " << p <<" , " << q <<" , " << r;
+}
